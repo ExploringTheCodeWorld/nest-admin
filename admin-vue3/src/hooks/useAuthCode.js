@@ -33,14 +33,12 @@ const getValidateCode = async (form, isClick) => {
       ElMessage.warning('正在请求验证码，请稍等')
       return
     }
-
     const { data } = await getCodeImg()
-    authCodeInfo.loading = true
-    authCodeInfo.captchaEnabled = data.captchaEnabled === undefined ? true : data.captchaEnabled
+    authCodeInfo.loading = false
+    authCodeInfo.captchaEnabled = data.captchaEnabled
     authCodeInfo.uuid = data.uuid
     if (authCodeInfo.captchaEnabled) {
       authCodeInfo.imgUrl = data.img
-      authCodeInfo.loading = false
     }
   } catch (err) {
     console.log('验证码获取错误:', err)
