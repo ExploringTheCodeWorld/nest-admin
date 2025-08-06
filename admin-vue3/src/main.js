@@ -14,8 +14,8 @@ import directive from './directive' // directive
 
 
 import draggable from "dd-form-draggable"
-import VFormDesigner from '@/assets/draggable/dist/designer.es'
-import '@/assets/draggable/dist/designer.style.css';
+import VFormDesigner from '@/assets/draggable/designer.es'
+import '@/assets/draggable/designer.style.css';
 
 // 注册指令
 import plugins from './plugins' // plugins
