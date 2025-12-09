@@ -63,7 +63,7 @@ const showRegisterUser = ref()
 const loginForm = reactive({
   model: {
     userName: 'admin',
-    password: '1234546',
+    password: '123456',
     rememberMe: false,
     code: '',
     uuid: ''
